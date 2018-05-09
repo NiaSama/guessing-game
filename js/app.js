@@ -68,5 +68,4 @@ if(answer5 === 'yes' || answer5 === 'y') {
 }   else{
         alert('Oh noooo! I actually do have a tattoo! Planning on getting my second one in October. Good guess though!')
 }
-
 alert('Thank you for playing my guessing game!')

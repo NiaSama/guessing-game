@@ -1,10 +1,15 @@
 * { font-family: Verdana, sans-serif;}
 body {
-    background-color: aqua
-}
+    background-image: url("http://i285.photobucket.com/albums/ll53/ellee2012/Cute/0-75.png");
+    background-color: #198bf7;
+
+ }
 h1 {
-    color: green
+    color: rgb(27, 3, 82)
 }
 h2 {
-    color: blueviolet
+    color: rgb(27, 3, 82)
+}
+p {
+    color: rgb(27, 3, 82)
 }

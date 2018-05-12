@@ -1,3 +1,19 @@
-*{
-    background-color: bisque;
+body {
+    background-color: #b3d191;
+    font-family: cursive;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h1 {
+    color: salmon;
+}
+
+h2 {
+    color: #5a403f;
+}
+
+li {
+    color: rgb(74, 98, 117);
+    list-style-position: inside;
 }

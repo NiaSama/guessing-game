@@ -1,71 +1,107 @@
 'use strict';
-
 var userPoints = 0;
 
-console.log('Hello TA\'s');
+alert('Hello! Welcome to my page. My name is Tanya!');
+var userName = prompt('What is your name?');
+console.log ('User\'s name is:' + userName);
 
-alert('Welcome to my lab 2 project!! For this project, you will be playing through a guessing game about me!');
+alert ('Hi ' + userName + '!! Nice to meet ya. Let\'s play a guessing game so you can get to know me!');
 
-var userName = prompt('Let\'s start with introductions. My name is Tanya. What is your name?');
+//Question 1
+var answer1 = prompt('Do I own any pets???' , 'type yes or no').toLowerCase();
+console.log('User answered question 1 with: ' + answer1);
 
-alert('Hi ' + userName + '! I am glad you want to play! I hope you enjoy it.');
-
-// Question 1
-var answer1 = prompt('Okay! Do I own any pets?' , 'type yes or no').toLowerCase();
-console.log('The user answered question 1 with: '+ answer1);
-
-if (answer1 === 'yes' || answer1 === 'y') {
-    alert('Good job! I do have pets! Two dogs, a husky mix and a shiba!')
-    userPoints++;
+if(answer1 === 'y' || answer1 === 'yes') {
+  alert('Good job! I do own pets. Two puppies!');
+  userPoints ++;
 } else {
-    alert('Oh no! I actually have two dogs. Better luck next time!');
+  alert('Oh no! I actually do own pets! Two puppies.');
 }
+alert('I forgot to mention, I will be grading you. You currently have ' + userPoints + '/7 points.');
 
-// alert('I forgot to mention, I will be grading you. You currently have ' + userPoints + ' points');
-
-//Question 2
+//Question2
 var answer2 = prompt('Next question. Do you think I play any instruments?').toLowerCase();
 console.log('The user answered question 2 with:' + answer2);
 
-if(answer2 === 'yes' || answer2 === 'y') {
-    alert('Awesome, you\'re right! I do play instruments! I actually play 3; the piano, the guitar, and the ukelele.' , 'type yes or no')
-    userPoints++;
-}    else{
-        alert('Aww, wrong. I do play instruments! 3 in fact.');
+if(answer2 === 'y' || answer2 === 'yes'){
+  userPoints++;
+  alert('Good job!! I do play instruments. 3 in fact! You now have ' + userPoints + '/7 points.');
+} else{
+  alert('Aww better luck next time. I do play instruments. 3 in fact! You now have ' + userPoints + '/7 points.');
 }
 
-// When it's time to put points in code>> alert('You now have' + userPoints + 'points');
+//Question3
+var answer3 = prompt('So fun fact, I am half korean. That being said, do you think I like kimchi??').toLowerCase();
+console.log('The user answered question 3 with: ' + answer3);
 
-//Question 3
-var answer3 = prompt('So fun fact, I am half Korean. That being said, do you think I like kimchi?' , 'type yes or no').toLowerCase();
-console.log('The user answered question 3 with:' + answer3);
-
-if(answer3 === 'no' || answer3 === 'n') {
-    alert('Yay! You guessed right. I do NOT like kimchi. I\'ve tried to like it all my life, but I just can\'t.')
-    userPoints++;
-}   else{
-        alert('Woops. That was a sneaky one huh? But sorry! No kimchi for meeeee.')
+if(answer3 === 'n' || answer3 === 'no'){
+  userPoints++;
+  alert('Good guess! I do not like kimchi... You now have ' + userPoints + '/7 points.');
+} else {
+  alert('Tricky question right? I actually do not like kimchi... sorry! You now have ' + userPoints + '/7 points.');
 }
 
-//Question 4
-var answer4 = prompt('Do you think Fortnite is my favorite game??' , 'type yes or no').toLowerCase();
-console.log('The user answered question 4 with:' + answer4);
+//Question4
+var answer4 = prompt('Do you think fortnite is my favorite game?').toLowerCase();
+console.log('The user answered question 4 with: ' + answer4);
 
-if(answer4 === 'no' || answer4 === 'n') {
-    alert('Yep you are right! I actually spent a lot of my spare time playing Overwatch instead!')
-    userPoints++;
-}   else{
-        alert('Uh oh. Overwatch is my favorite game right now. But Fortnite is a close second :P. Good try though!')
+if(answer4 === 'n' || answer4 === 'no'){
+  userPoints++;
+  alert('You are right! Overwatch is actually my favorite game right now. You now have ' + userPoints + '/7 points.');
+} else {
+  alert('Sorry! Fortnite is not my favorite game. I actually really like OverWatch. You now have ' + userPoints + '/7 points.');
 }
 
-//Question 5
-var answer5 = prompt('Final question. Do you think I have tattoos??' , 'type yes or no').toLowerCase();
-console.log('The user answer question 5 with:' + answer5);
+//Question5
+var answer5 = prompt('Do you think I have tattoos?').toLowerCase();
+console.log('The user answered question 5 with: ' + answer5);
 
-if(answer5 === 'yes' || answer5 === 'y') {
-    alert('You are right! I only have one right now but i\'m planning on getting my second one in October!')
-    userPoints++;
-}   else{
-        alert('Oh noooo! I actually do have a tattoo! Planning on getting my second one in October. Good guess though!')
+if(answer5 === 'y' || answer5 === 'yes'){
+  userPoints++;
+  alert('Yup! I have one right now and will be getting my second one in October! You now have ' + userPoints + '/7 points.');
+} else {
+  alert('Awww, I actually do have tattoos. You now have ' + userPoints + '/7 points.');
 }
-alert('Thank you for playing my guessing game!')
+
+//Question 6
+var guessCount = 4;
+do{
+  var answer6 = prompt ('Alright time to guess. How many states do you think I have lived in outside of Washington state? You have ' + guessCount + ' tries to guess.' , 'Enter a number 1 - 10.');
+  console.log('User guess: ' + answer6);
+  answer6 = parseInt(answer6);
+  if(answer6 === 5) {
+    alert('Wow great guess! How did you know?');
+    userPoints++;
+  }else if(answer6 < 5) {
+    alert('Aww too low.');
+    guessCount--;
+  } else if (answer6 > 5){
+    alert('Aww too high.');
+    guessCount--;
+  }
+} while(answer6 !== 5 && guessCount > 0);
+if (guessCount === 0){
+  alert('Oh no, you ran out of tries. Let\'s go to the next question.');
+}
+
+//Question7
+var flag = true;
+var movieGuess = 6;
+do {
+  var answer7 = prompt('Last question! What do you think my favorite ghibli movie is? You have ' + movieGuess + ' tries.').toLowerCase();
+  console.log('The user answered question 7 with: ' + answer7);
+  var movies = ['totoro', 'howl\'s moving castle', 'ponyo'];
+  for(var i = 0; i < movies.length;i++){
+    if(answer7 === movies[i]){
+      alert('Wow good job! You got that correct!');
+      flag = false;
+      userPoints++;
+      break;
+    } else{
+      alert('Oh no!');
+      movieGuess--;
+      break;
+    }
+  }
+} while (movieGuess > 0 && flag);
+alert('Awesome you are all done! You managed to get ' + userPoints + '!!' );

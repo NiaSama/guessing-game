@@ -100,6 +100,7 @@ function questionSix() {
   }
 }
 questionSix();
+
 //Question7
 function questionSeven() {
   var flag = true;
@@ -111,8 +112,6 @@ function questionSeven() {
     for(var i = 0; i < movies.length; i++) {
       if(answer7 === movies[i]) {
         flag = false;
-      } else {
-        continue;
       }
     }
     if (flag === false) {

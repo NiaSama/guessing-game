@@ -118,7 +118,7 @@ function questionSeven() {
       alert('Wow good job! You got that correct!');
       userPoints++;
       break;
-    } else {
+    } else {ß
     alert('Oh no!');
         movieGuess--;
     }

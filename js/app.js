@@ -124,6 +124,6 @@ function questionSeven() {
     }
   } while (movieGuess > 0 && flag);
 }
-questionSeven();
+questionSeven(); 
 
 alert('Awesome you are all done! You managed to get ' + userPoints + '!!' );

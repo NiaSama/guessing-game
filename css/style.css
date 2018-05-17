@@ -8,14 +8,12 @@ body {
 h1 {
     color: salmon;
 }
-
 h2 {
-    color: #5a403f;
+    color: salmon
 }
-h3 {
-    color: pink
+p {
+        color: #5a403f;
 }
-
 li {
     color: rgb(74, 98, 117);
     list-style-position: inside;

@@ -1,15 +1,28 @@
-* { font-family: Verdana, sans-serif;}
+* {
+    text-shadow: 1px 2px 1px rgb(106, 222, 238);
+}
 body {
-    background-image: url("http://i285.photobucket.com/albums/ll53/ellee2012/Cute/0-75.png");
-    background-color: #198bf7;
+    background-color: #6C567B;
+    font-family: 'Nothing You Could Do', 'cursive';
+    font-size: 1.0em;
+    text-align: center;
+    background-image: url('https://78.media.tumblr.com/6b731f31729570a24162720e7c9e3a96/tumblr_owtc2xFu2O1toqefko1_500.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right; 
+}
 
- }
 h1 {
-    color: rgb(27, 3, 82)
+    color: #C06C84;
+    
 }
 h2 {
-    color: rgb(27, 3, 82)
+    color: #C06C84;
 }
 p {
-    color: rgb(27, 3, 82)
+        color: #A8E6CF;
+}
+li {
+    color: #A8E6CF;
+    list-style-position: inside;
 }

@@ -1,20 +1,28 @@
+* {
+    text-shadow: 1px 2px 1px rgb(106, 222, 238);
+}
 body {
-    background-color: #b3d191;
-    font-family: cursive;
-    font-size: 1.5em;
+    background-color: #6C567B;
+    font-family: 'Nothing You Could Do', 'cursive';
+    font-size: 1.0em;
     text-align: center;
+    background-image: url('https://78.media.tumblr.com/6b731f31729570a24162720e7c9e3a96/tumblr_owtc2xFu2O1toqefko1_500.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right; 
 }
 
 h1 {
-    color: salmon;
+    color: #C06C84;
+    
 }
 h2 {
-    color: salmon
+    color: #C06C84;
 }
 p {
-        color: #5a403f;
+        color: #A8E6CF;
 }
 li {
-    color: rgb(74, 98, 117);
+    color: #A8E6CF;
     list-style-position: inside;
 }
